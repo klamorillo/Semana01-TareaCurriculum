@@ -8,6 +8,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hoja de vida</title>
   <style>
+    /* Estilo para el fondo de las celdas de la tabla */
+    table {
+      border-collapse: collapse;
+      width: 80%;
+    }
+    
+    table th, table td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+    
+    table th.grado {
+      background-color: pink;
+    }
+    
+    table th.titulo {
+      background-color: pink;
+    }
+    
+    table th.institucion {
+      background-color: pink;
+    }
+  </style>
+  <style>
     .imagen-y-texto {
       clear: both; /* Evita que los elementos floten alrededor */
     }
@@ -27,38 +51,12 @@
       color: blue;
       text-decoration: underline;
     }
-
-  
-     /* Estilo de fondo para las celdas de la tabla */
-    table {
-      border-collapse: collapse; /* Combina los bordes de las celdas */
-      width: 80%;
-    }
-
-    /* Estilo para el enlace que mostrará el submenú */
-    .mostrar-submenu {
-      cursor: pointer;
-      color: blue;
-      text-decoration: underline;
-    }
-	
-	/* Estilo de fondo para las celdas de la tabla */
-    table {
-      border-collapse: collapse; /* Combina los bordes de las celdas */
-      width: 80%;
-    }
-
-    th, td {
-      border: 2px solid Black; /* Agrega bordes a la tabla y sus celdas */
-      padding: 8px; /* Espaciado interno en las celdas */
-      text-align: left; /* Alineación del texto en las celdas */
-    }
   </style>
 </head>
 <body>
   <h1>Mi curriculum vitae</h1>
-  <font size=10>Karla Morales Castrillo</font><hr/>
-  <a href="PaginaExtra.html">Conozca más de mi</a>
+  <font size="10">Karla Morales Castrillo</font><hr/>
+  <a href="PaginaExtra.html">Conozca más de mí</a>
   <div class="imagen-y-texto">
     <img src="ImagenPerfil.jpg" alt="Foto" class="imagen">
     <p><h2><b>Habilidades Blandas:</b></h2></p>
@@ -78,17 +76,16 @@
   </div>
   <!-- Enlace para recargar la página -->
 
-  <table border="10" width="80%">
-	    <tr>
-    <tr style="background-color: lightblue;">
-      <th><h2>Grado/Año</h2></th>
-      <th><h2>Título o certificación</h2></th>
-      <th><h2>Institución</h2></th>
+  <table border="1">
+    <tr>
+      <th class="grado">Grado/Año</th>
+      <th class="titulo">Título o certificación</th>
+      <th class="institucion">Institución</th>
     </tr>
     <tr>
       <td>2003-2009</td>
       <td>Primaria</td>
-      <td><p><a href="https://drea.mep.go.cr/circuito-04/escuela-leon-cortes-castro" target="_blank" >Escuela León Cortés Castro</a></p></td>   
+      <td><a href="https://drea.mep.go.cr/circuito-04/escuela-leon-cortes-castro" target="_blank" >Escuela León Cortés Castro</a></td>   
     </tr>
     <tr>
       <td>2012-2014-2015</td>
@@ -100,36 +97,32 @@
           <li>Bachillerato de Secundaria</li>
         </ul>
       </td>
-      <td><p><a href="https://drea.mep.go.cr/circuito-04/liceo-san-rafael-de-alajuela" target="_blank" >Liceo San Rafael de Alajuela</a></p></td>
+      <td><a href="https://drea.mep.go.cr/circuito-04/liceo-san-rafael-de-alajuela" target="_blank" >Liceo San Rafael de Alajuela</a></td>
     </tr> 
     <tr>
       <td>2016-2017-2018</td>
       <td>
         <!-- Submenú de varios certificados para una institución -->
         <ul class="submenu">
-          <ol type="1">
-            <li>Linux Professional Institute</li>
-            <li>NDG Linux Unhatched</li>
-            <li>Introducción a la Ciberseguridad</li>
-          </ol>
+          <li>Linux Professional Institute</li>
+          <li>NDG Linux Unhatched</li>
+          <li>Introducción a la Ciberseguridad</li>
         </ul>
       </td>
-      <td><p><a href="https://www.utn.ac.cr/cursos-tecnicos-por-sede" target="_blank" >Universidad Técnica Nacional</a></p></td>
+      <td><a href="https://www.utn.ac.cr/cursos-tecnicos-por-sede" target="_blank" >Universidad Técnica Nacional</a></td>
     </tr> 
     <tr>
       <td>2020-2022</td>
       <td>
         <!-- Submenú de varios certificados para una institución -->
         <ul class="submenu">
-          <ol type="I">
-            <li><p><a href="https://www.coursera.org/account/accomplishments/specialization/RDVVAP643RN6" target="_blank" >Improve Your English Communication Skills</a></p></li>
-            <li><p><a href="https://www.coursera.org/account/accomplishments/verify/Q6GWGJTJB4TS" target="_blank" >Introduction to Docker: Build Your Own Portfolio Site</a></p></li>
-            <li><p><a href="https://www.coursera.org/account/accomplishments/verify/5HDKYMDMUKLN" target="_blank" >Command Line Basics in Linux</a></p></li>
-            <li><p><a href="https://www.coursera.org/account/accomplishments/verify/SDNP42NZ879X" target="_blank" >Build Your First React Website</a></p></li>
-          </ol>
+          <li><a href="https://www.coursera.org/account/accomplishments/specialization/RDVVAP643RN6" target="_blank" >Improve Your English Communication Skills</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/Q6GWGJTJB4TS" target="_blank" >Introduction to Docker: Build Your Own Portfolio Site</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/5HDKYMDMUKLN" target="_blank" >Command Line Basics in Linux</a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/SDNP42NZ879X" target="_blank" >Build Your First React Website</a></li>
         </ul>
       </td>
-      <td><p><a href="https://www.coursera.org/" target="_blank" >Coursera</a></p></td>
+      <td><a href="https://www.coursera.org/" target="_blank" >Coursera</a></td>
     </tr> 
     <tr>
       <td>2023</td>
@@ -140,7 +133,7 @@
           <li>Introducción al Desarrollo Web II (40 horas)</li>
         </ul>
       </td>
-      <td><p><a href="https://grow.google/intl/es/courses-and-tools/" target="_blank" >Google Activate</a></p></td>
+      <td><a href="https://grow.google/intl/es/courses-and-tools/" target="_blank" >Google Activate</a></td>
     </tr> 
   </table>
 </body>
